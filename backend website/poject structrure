@@ -1,0 +1,27 @@
+mohalla-properties-backend/
+├── config/
+│   └── database.js
+├── controllers/
+│   ├── propertyController.js
+│   ├── leadController.js
+│   ├── contactController.js
+│   └── authController.js
+├── models/
+│   ├── Property.js
+│   ├── Lead.js
+│   ├── Contact.js
+│   └── User.js
+├── routes/
+│   ├── propertyRoutes.js
+│   ├── leadRoutes.js
+│   ├── contactRoutes.js
+│   └── authRoutes.js
+├── middleware/
+│   ├── auth.js
+│   └── errorHandler.js
+├── uploads/
+├── .env
+├── .gitignore
+├── package.json
+├── server.js
+└── README.md
