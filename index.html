@@ -1334,3 +1334,39 @@
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
+// Fix B2B navigation scrolling
+document.addEventListener('DOMContentLoaded', function() {
+    // Update B2B link in navigation to scroll properly
+    const b2bNavLinks = document.querySelectorAll('a[href="#b2b"]');
+    b2bNavLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const b2bSection = document.getElementById('b2b');
+            if (b2bSection) {
+                window.scrollTo({
+                    top: b2bSection.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    
+    // Fix form layout
+    const formInputs = document.querySelectorAll('.b2b-section input, .b2b-section select, .b2b-section textarea');
+    formInputs.forEach(input => {
+        input.style.width = '100%';
+        input.style.boxSizing = 'border-box';
+    });
+    
+    // Fix payment methods
+    const paymentMethods = document.querySelectorAll('.payment-method');
+    if (paymentMethods.length > 0) {
+        paymentMethods.forEach(method => {
+            method.style.cursor = 'pointer';
+            method.addEventListener('click', function() {
+                paymentMethods.forEach(m => m.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    }
+});
