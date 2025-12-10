@@ -546,7 +546,314 @@
             border-top: 1px solid rgba(255,255,255,0.1);
             color: rgba(255,255,255,0.6);
         }
-        
+
+            <!-- Services Section -->
+    <!-- ... existing services section code ... -->
+    </section>
+
+    <!-- B2B Promotion Section - ADD THIS -->
+    <section class="b2b-promo" id="b2b-promo">
+        <div class="container">
+            <div class="b2b-promo-card">
+                <div class="promo-content">
+                    <div class="promo-badge">
+                        <i class="fas fa-shield-alt"></i> EXCLUSIVE FOR BROKERS
+                    </div>
+                    <h2>Connect with Other Brokers Securely</h2>
+                    <p>Join Delhi NCR's first encrypted P2P network. Share inventory with verified brokers, track analytics, and close more deals.</p>
+                    
+                    <div class="promo-features">
+                        <div class="promo-feature">
+                            <i class="fas fa-lock"></i>
+                            <span>End-to-End Encryption</span>
+                        </div>
+                        <div class="promo-feature">
+                            <i class="fas fa-users"></i>
+                            <span>250+ Verified Brokers</span>
+                        </div>
+                        <div class="promo-feature">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Inventory Analytics</span>
+                        </div>
+                    </div>
+                    
+                    <div class="promo-price">
+                        <span class="price">₹999<span>/month</span></span>
+                        <span class="price-note">12-month commitment • Save ₹6,000/year</span>
+                    </div>
+                    
+                    <div class="promo-buttons">
+                        <a href="b2b.html" class="cta-button promo-btn">
+                            <i class="fas fa-rocket"></i> Learn More
+                        </a>
+                        <a href="b2b.html#subscription-form" class="cta-button secondary-btn">
+                            <i class="fas fa-user-shield"></i> Join Now
+                        </a>
+                    </div>
+                </div>
+                <div class="promo-image">
+                    <div class="image-wrapper">
+                        <i class="fas fa-network-wired"></i>
+                        <div class="floating-icons">
+                            <i class="fas fa-user-tie"></i>
+                            <i class="fas fa-home"></i>
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+    <!-- ... existing contact section ... -->
+        /* Add this to your existing CSS, before the responsive section */
+
+/* B2B Promotion Section */
+.b2b-promo {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);
+    border-top: 1px solid #ffe0e0;
+    border-bottom: 1px solid #ffe0e0;
+}
+
+.b2b-promo-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(227, 28, 61, 0.1);
+    border: 2px solid #ffebee;
+    display: flex;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.promo-content {
+    flex: 1;
+    padding: 3rem;
+}
+
+.promo-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #e31c3d 0%, #c41734 100%);
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.promo-content h2 {
+    font-size: 2.2rem;
+    color: #000;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.promo-content p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.promo-features {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.promo-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.promo-feature i {
+    color: #e31c3d;
+    font-size: 1.2rem;
+}
+
+.promo-price {
+    background: #f8f8f8;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    border: 1px solid #eee;
+}
+
+.price {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #e31c3d;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.price span {
+    font-size: 1.4rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.price-note {
+    color: #666;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.promo-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.promo-btn {
+    background: linear-gradient(135deg, #e31c3d 0%, #c41734 100%);
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.secondary-btn {
+    background: white;
+    color: #e31c3d;
+    border: 2px solid #e31c3d;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.secondary-btn:hover {
+    background: #fff5f5;
+}
+
+.promo-image {
+    flex: 0 0 300px;
+    background: linear-gradient(135deg, #ffebee 0%, #ffe0e0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.image-wrapper i.fa-network-wired {
+    font-size: 6rem;
+    color: #e31c3d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.floating-icons {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.floating-icons i {
+    position: absolute;
+    font-size: 1.8rem;
+    color: #ff6b8b;
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.floating-icons i:nth-child(1) {
+    top: 20px;
+    left: 20px;
+    animation-delay: 0s;
+}
+
+.floating-icons i:nth-child(2) {
+    top: 20px;
+    right: 20px;
+    animation-delay: 2s;
+}
+
+.floating-icons i:nth-child(3) {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: 4s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive for promo section */
+@media (max-width: 768px) {
+    .b2b-promo-card {
+        flex-direction: column;
+    }
+    
+    .promo-content {
+        padding: 2rem;
+    }
+    
+    .promo-image {
+        flex: none;
+        height: 250px;
+    }
+    
+    .promo-features {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .promo-buttons {
+        flex-direction: column;
+    }
+    
+    .promo-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .price {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .b2b-promo {
+        padding: 2rem 0;
+    }
+    
+    .promo-content {
+        padding: 1.5rem;
+    }
+}
         /* Responsive Design */
         @media (max-width: 768px) {
             .header-container {
@@ -1015,3 +1322,15 @@
         <li><a href="#contact">Contact</a></li>
     </ul>
 </div>
+<nav>
+    <ul>
+        <li><a href="#home">Buy</a></li>
+        <li><a href="#properties">Rent</a></li>
+        <li><a href="#youtube">Videos</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <!-- THIS LINK WILL SCROLL TO B2B PROMO SECTION ON MAIN PAGE -->
+        <li><a href="#b2b-promo">B2B Connect</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
