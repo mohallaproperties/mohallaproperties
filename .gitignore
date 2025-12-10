@@ -9,3 +9,5 @@ Thumbs.db
 # Ignore OS generated files
 *.swp
 *.swo
+
+node_modules
