@@ -5,10 +5,10 @@ const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
 require('dotenv').config();
 
-const propertyRoutes = require('./routes/propertyRoutes');
+const propertyRoutes = require('./routes/propertyroutes');
 const contactRoutes = require('./routes/contactRoutes');
 const leadRoutes = require('./routes/leadRoutes');
-const authRoutes = require('./routes/authRoutes');
+const authRoutes = require('./routes/authroutes');
 
 const app = express();
 
