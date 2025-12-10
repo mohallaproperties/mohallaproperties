@@ -24,7 +24,7 @@ app.use('/api/', limiter);
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://your-github-username.github.io'],
+  origin: ['http://localhost:3000', 'https://mohallaproperties.github.io/mohallaproperties/'], //https://mohallaproperties-1bcn.onrender.com
   credentials: true
 }));
 app.use(express.json());
