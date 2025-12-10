@@ -1370,3 +1370,104 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+/* Fix B2B Section Layout */
+.b2b-section .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.b2b-section .form-group {
+    margin-bottom: 1rem;
+}
+
+.b2b-section .form-group input,
+.b2b-section .form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.b2b-section .payment-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 1.5rem 0;
+}
+
+.b2b-section .payment-method {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.b2b-section .payment-method:hover,
+.b2b-section .payment-method.active {
+    border-color: #e31c3d;
+    background-color: #fff5f5;
+}
+
+.b2b-section .method-check .fa-circle {
+    color: #ddd;
+}
+
+.b2b-section .method-check .fa-check-circle {
+    color: #e31c3d;
+}
+
+/* Make form responsive */
+@media (max-width: 768px) {
+    .b2b-section .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .b2b-section .payment-methods {
+        flex-direction: column;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+} 
+/* Make B2B section more prominent */
+#b2b {
+    scroll-margin-top: 100px; /* Helps with navigation */
+}
+
+.b2b-section .subscription-card {
+    border: 2px solid #e31c3d;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.b2b-section .subscription-header {
+    background: linear-gradient(135deg, #e31c3d 0%, #c41734 100%);
+    color: white;
+    padding: 1.5rem;
+}
+
+.b2b-section .subscribe-button {
+    background: linear-gradient(135deg, #e31c3d 0%, #c41734 100%);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.b2b-section .subscribe-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(227, 28, 61, 0.3);
+}
